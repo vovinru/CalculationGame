@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculationGame2.FinalPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="GAME OVER!" FontSize="45" HorizontalTextAlignment="Center" Margin="20,20,20,20"></Label>
+
+            <Label Text="{Binding AllGameTimeString}" FontSize="20" HorizontalTextAlignment="Center" Margin="20,20,20,20"></Label>
+
+            <Label Text="{Binding ScoreString}" FontSize="20" HorizontalTextAlignment="Center" Margin="20,20,20,20"></Label>
+
+            <Label Text="{Binding MaxLevelString}" FontSize="20" HorizontalTextAlignment="Center" Margin="20,20,20,20"></Label>
+
+            <Button x:Name="ButtonOneMore" Text="One more time" FontSize="20" Margin="20,20,20,20" Clicked="ButtonOneMore_Clicked"></Button>
+
+            <Button x:Name="ButtonMainPage" Text="Main page" FontSize="20" Margin="20,20,20,20" Clicked="ButtonMainPage_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

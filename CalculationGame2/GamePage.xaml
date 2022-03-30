@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculationGame2.GamePage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="{Binding TimerString}" FontSize="16" Margin="10, 25"></Label>
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Grid.Column="0" Text="{Binding ScoreString}" FontSize="16" Margin="10, 25"></Label>
+                <Label Grid.Column="1" Text="{Binding LevelString}" FontSize="16" Margin="10, 25"></Label>
+
+            </Grid>
+
+            <Label Text="{Binding SampleString}" FontSize="36" HorizontalTextAlignment="Center" Margin="20,20,20,20"></Label>
+
+            <Grid x:Name="GridButtons">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
